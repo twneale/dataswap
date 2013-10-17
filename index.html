@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dataswap by twneale</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/twneale/dataswap">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/twneale/dataswap/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/twneale/dataswap/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Dataswap</h1>
+          <p>Notes from my talk on using APIs at DataSwap 2013</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/twneale">twneale</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h3>
+<a name="using-apis" class="anchor" href="#using-apis"><span class="octicon octicon-link"></span></a>Using APIs</h3>
+
+<p>Thom Neale: </p>
+
+<ul>
+<li>twitter: <a href="http://twitter.com/twneale">@twneale</a>
+</li>
+<li>github: <a href="http://github.com/twneale">twneeale</a>
+</li>
+</ul><h2>
+<a name="government-data" class="anchor" href="#government-data"><span class="octicon octicon-link"></span></a>Government Data</h2>
+
+<ul>
+<li>Sunlight Foundation <a href="http://sunlightfoundation.com/api/">API portal</a>
+
+<ul>
+<li>in python, "pip install sunlight" <a href="https://github.com/sunlightlabs/python-sunlight">python-sunlight</a>
+</li>
+<li>
+<a href="http://sunlightlabs.github.io/congress/">Congress API</a>
+
+<ul>
+<li>Look up legislators by zip code or lat/long</li>
+<li>Official Twitter, YouTube, and Facebook accounts.</li>
+<li>Committees and subcommittees in Congress, including memberships and rankings.</li>
+<li>Visualizing partisanship </li>
+<li>Cody's talk showed grouping of federal legislators by frequency of voting similarity</li>
+<li>Do stuff like this: an <a href="http://beta.staterep.me/profile/PAL000013">area curve</a> depicting the ideological distribution of the Pennsylvania house and senate</li>
+<li>Useful libraries
+
+<ul>
+<li><a href="http://cran.r-project.org/web/packages/pscl/index.html">Political Science Computational Library</a></li>
+<li>Absurd amount of Political Science computation insanity</li>
+<li><a href="https://github.com/twneale/pypscl">pypscl</a></li>
+<li>A friendlier Python wrapper for said computational insanity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://sunlightlabs.github.io/datacommons/">Influence Explorer API</a>
+
+<ul>
+<li>See it in action: <a href="http://influenceexplorer.com/">http://influenceexplorer.com/</a>
+</li>
+<li>Programmatic access tracking the influence of money in politics</li>
+<li>Search and filter individual contributions, contracts, grants and lobbying registrations. </li>
+<li>Find the most active Politicians, Individuals, Organizations and Industries based on receipts, expenditures and lobbying.</li>
+</ul>
+</li>
+<li>
+<a href="http://sunlightlabs.github.io/openstates-api/">Openstates.org API</a>
+
+<ul>
+<li>See it an action at <a href="http://openstates.org">http://openstates.org</a>
+</li>
+<li>State Metadata - Details on what data is available, including terms, sessions, and state-specific names for things.</li>
+<li>Bills - Details on bills &amp; resolutions, including actions &amp; votes.</li>
+<li>Legislators - Details on legislators, including contact details.</li>
+<li>Committees - Details on committees as they currently stand.</li>
+<li>Events - Details on upcoming events such as committee meetings and hearings.</li>
+<li>Districts - Details on districts and their boundaries.</li>
+<li>What kinds of stuff could you do with this data?</li>
+<li>Predictive analytics for state legislations: <a href="http://fiscalnote.com">FiscalNote.com</a>
+
+<ul>
+<li>No one is doing this stuff (except fiscalnote.com)</li>
+<li>Does anyone care? Mark Cuban just invested 1.2 Million in Fiscal Note<br>
+</li>
+</ul>
+</li>
+<li>Terrible Ideas</li>
+<li>Legislative Hot or Not .COM</li>
+<li>Republican/Democrat or not .COM</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://canlii.org">Canadian Legal Information Institute</a>
+
+<ul>
+<li>Canadian Court Decisions <a href="http://developer.canlii.org/docs">API</a>
+</li>
+<li>Network analysis of Canadian Court decision citations patterns <a href="http://twneale.github.io/citation-network-analysis/">by me!</a>
+</li>
+<li>Cite Fight! <a href="https://cite-fight.com">cite-fight.com</a> </li>
+</ul>
+</li>
+<li>
+<a href="http://api.opencorporates.com/documentation/Home">OpenCorporates.org API</a>
+
+<ul>
+<li>How complex are financial relationships? (OMG)[<a href="http://opencorporates.com/viz/financial/">http://opencorporates.com/viz/financial/</a>]</li>
+</ul>
+</li>
+</ul><h2>
+<a name="other-useful-apis" class="anchor" href="#other-useful-apis"><span class="octicon octicon-link"></span></a>Other useful APIs</h2>
+
+<ul>
+<li>
+<a href="http://diffbot.com">Diffbot.com</a>
+
+<ul>
+<li>Extract main content from a page (remove navigation, header, footer, etc)</li>
+<li>Extract keywords</li>
+</ul>
+</li>
+<li>
+<a href="http://www.alchemyapi.com/">Alchemy API</a>
+
+<ul>
+<li>Entity recognition--returns entities tagged with dbpedia, freebase IDs</li>
+<li>Sentiment analysis</li>
+</ul>
+</li>
+<li>
+<a href="http://smartystreets.com/">SmartyStreets</a>
+
+<ul>
+<li>Pass it unstructured text, get one or more normalized addresses in return</li>
+</ul>
+</li>
+<li>
+<a href="http://www.opencalais.com/">Open Calais</a>
+
+<ul>
+<li>Entity extraction</li>
+</ul>
+</li>
+</ul><h2>
+<a name="5-tips-for-working-with-apis" class="anchor" href="#5-tips-for-working-with-apis"><span class="octicon octicon-link"></span></a>5 Tips for Working with APIs</h2>
+
+<ul>
+<li>Be cheap
+
+<ul>
+<li>Resist the urge to subscribe to non-free APIs, at least at first</li>
+<li>Too often developers overcommit themselves to a certain technology--don't do it!</li>
+<li>Try out different free APIs; throw out the ones that don't work for you</li>
+</ul>
+</li>
+<li>Later, inquire about free/cheap use for educational purposes
+
+<ul>
+<li>Some service will give you free unlimited use</li>
+<li>Others only do that for 501(c)(3) nonprofit orgs</li>
+</ul>
+</li>
+<li>Free APIs can be flaky
+
+<ul>
+<li>Consider using an task queue like <a href="http://www.celeryproject.org/">Celery</a>
+</li>
+<li>Tasks succeeded or fail individually, can be retried individually</li>
+</ul>
+</li>
+<li>To maximize freeness, consider caching responses
+
+<ul>
+<li>Many APIs other data in JSON</li>
+<li>You can insert those responses directly into NoSQL databases like MongoDB, CouchDB, Cassandra</li>
+<li>
+<a href="http://mongolab.com">MongoLab</a> You can create an unlimited (?) number of free 500MB of MongoDB databases</li>
+<li>Resist the urge to cache response on disk: if you're using Amazon EC2, you'll be sorry</li>
+</ul>
+</li>
+</ul><h3>
+<a name="go-forth-and-hack" class="anchor" href="#go-forth-and-hack"><span class="octicon octicon-link"></span></a>GO FORTH AND HACK!</h3>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44953144-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
